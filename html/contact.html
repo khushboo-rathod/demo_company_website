@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>IP Project - Rollno 40 & 48</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+        integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .headerMain {
+            background-image: url('../imgs/contact-us.jpg');
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Responsive NavBar -->
+    <nav class="navbar navbar-dark bg-primary navbar-expand-sm fixed-top">
+        <div class="container"> <a href="index.html" class="navbar-brand">TechTide Solutions</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#idNav"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="idNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Image page header -->
+    <header class="headerMain">
+        <div class="container" style="text-align: center">
+            <div class="row">
+                <div class="col-md-8 mx-auto headingtext">
+                    <div class="content display-4 text-uppercase text-primary">Contact Us</div>
+                </div>
+            </div>
+    </header>
+
+    <!-- Main Content -->
+    <div hidden id="success" class="alert alert-success alert-dismissible fade show" role="alert" id="alert">
+        Your response has been submitted successfully!!
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div class="container pb-4">
+        <div class="container jumbotron">
+            <div class="row">
+                <div class="col-md-8 mx-auto ">
+                    <form id="contact" class="contact" method="POST" action="">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" name="name" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" name="email" id="email" required>
+                            <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Phone:</label>
+                            <input type="number" class="form-control" name="phone" id="phone"
+                                onKeyPress="if(this.value.length==10) return false;" required>
+                            <small class="form-text text-muted">We'll never share your phone number with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service:</label>
+                            <select class="form-control" name="service" id="service" required>
+                                <option selected hidden>Select service</option>
+                                <option>Managed IT service</option>
+                                <option>Backup Recovery</option>
+                                <option>Co-Managed IT service</option>
+                                <option>Cybersecurity</option>
+                                <option>IT Consulting</option>
+                                <option>Cloud Service</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea rows="7" cols="100" class="form-control" name="message" id="message" required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn btn-primary" id="submitFormData">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer social media links copyright etc..... -->
+    <footer>
+        <div class="container-fluid bg-dark text-light">
+            <div class="row">
+                <div class="col-md-8 mx-auto ">
+                    <p class="text-muted text-center">Copyright &copy; Made by Roll no 40 and 48</p>
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook text-light"
+                                    aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-youtube-play text-light"
+                                    aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter text-light"
+                                    aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-instagram text-light"
+                                    aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin text-light"
+                                    aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../javascript/contact.js"></script>
+
+</body>
+
+</html>
